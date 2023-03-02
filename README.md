@@ -20,9 +20,9 @@ This code challenge focused on testing the following topics:
 ## Project Setup
 
 - Clone the repository using git clone `https://github.com/fatouuuu/code-challenge-phase-3-wk-3.git`.
-- Run bundle install to install the required dependencies.
-- Run rake db:create to create the database.
-- Run rake db:migrate to migrate the database schema.
+- Run `bundle install` to install the required dependencies.
+- Run `rake db:create` to create the database.
+- Run `rake db:migrate` to migrate the database schema.
 
 ## Console
 
