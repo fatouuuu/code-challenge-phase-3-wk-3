@@ -4,7 +4,7 @@
 
 This assignment requires one to create a Ruby application that models an e-commerce domain with three models: User, Review, and Product. I used Active Record to create migrations for your database schema and Active Record associations to model the relationships between your models. I have three models: User, Review and Product.
 
-## Entity Relationship Diagramerd
+## Entity Relationship Diagram
 
 For this code challenge, a Product has many Users, a User has many Products, and a Review belongs to a User and to a Product. Product-User is a many-to-many relationship.
 
