@@ -46,29 +46,29 @@ Use Active Record association macros and Active Record query methods where
 
 appropriate (i.e. has_many, has_many through, and belongs_to).
 
-    ```
+    
     Review
     - Returns the User instance for this Review
     - Returns the Product instance for this Review
     - Review#user
     - Review#product
-    ```
+    
 
-    ```
+    
     Product
     - Product#reviews
         Returns a collection of all the Reviews for the Product
     - Product#users
         Returns a collection of all the Users who reviewed the Product
-    ```
+    
 
-    ```
+    
     User
     - User#reviews
         Returns a collection of all the Reviews that the User has given
     - User#products
         Returns a collection of all the Products that the User has reviewed
-    ```
+    
 
 Use the rake console and check that these methods work before proceeding. For
 example, you should be able to call User.first.products and see a list of the products for the first user in the database based on your seed data, and Review.first.user should return the user for the first review in the database.
