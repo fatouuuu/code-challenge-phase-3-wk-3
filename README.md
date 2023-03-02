@@ -46,7 +46,7 @@ Use Active Record association macros and Active Record query methods where
 
 appropriate (i.e. has_many, has_many through, and belongs_to).
 
-    ```md
+    ```
     Review
     - Returns the User instance for this Review
     - Returns the Product instance for this Review
@@ -54,7 +54,7 @@ appropriate (i.e. has_many, has_many through, and belongs_to).
     - Review#product
     ```
 
-    ```md
+    ```
     Product
     - Product#reviews
         Returns a collection of all the Reviews for the Product
@@ -62,7 +62,7 @@ appropriate (i.e. has_many, has_many through, and belongs_to).
         Returns a collection of all the Users who reviewed the Product
     ```
 
-    ```md
+    ```
     User
     - User#reviews
         Returns a collection of all the Reviews that the User has given
@@ -75,13 +75,13 @@ example, you should be able to call User.first.products and see a list of the pr
 
 ### Aggregate and Association Methods
 
-    ```md
+    ```
     Review
     - Review#print_review
         This should puts in the terminal a string formatted as follows: Review for {insert product name} by {insert user name}: {insert review star_rating}. {insert review comment}
     ```
 
-    ```md
+    ```
     Product
     - Product#leave_review(user, star_rating, comment)
         Takes a User (an instance of the User class), a star_rating (integer), and a comment (string) as arguments, and creates a new Review in the database associated with this Product and the User
@@ -92,7 +92,7 @@ example, you should be able to call User.first.products and see a list of the pr
         Returns a float representing the average star rating for all reviews for this product
     ```
 
-    ```md
+    ```
     User
     - User#favorite_product
         Returns the product instance that has the highest star rating from this user
