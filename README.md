@@ -75,13 +75,13 @@ example, you should be able to call User.first.products and see a list of the pr
 
 ### Aggregate and Association Methods
 
-    ```
+    
     Review
     - Review#print_review
         This should puts in the terminal a string formatted as follows: Review for {insert product name} by {insert user name}: {insert review star_rating}. {insert review comment}
-    ```
+    
 
-    ```
+    
     Product
     - Product#leave_review(user, star_rating, comment)
         Takes a User (an instance of the User class), a star_rating (integer), and a comment (string) as arguments, and creates a new Review in the database associated with this Product and the User
@@ -90,16 +90,16 @@ example, you should be able to call User.first.products and see a list of the pr
         Each review should be formatted as follows: Review for {insert product name} by {insert user name}: {insert review star_rating}. {insert review comment}
     - Product#average_rating
         Returns a float representing the average star rating for all reviews for this product
-    ```
+    
 
-    ```
+    
     User
     - User#favorite_product
         Returns the product instance that has the highest star rating from this user
     - User#remove_reviews(product)
         Takes a Product (an instance of the Product class) and removes all of this user's reviews for that product
         You will have to delete any rows from the reviews table associated with this user and the product
-    ```
+    
 
 ## Conclusion
 
